@@ -114,23 +114,43 @@ python scripts/evaluate.py --dataset all --split test
 ## 📁 Project Structure
 
 ```
-Cerebro/
-├── app/                      # Streamlit dashboard
-│   ├── streamlit_app.py      # Main application
-│   └── components/           # Visualization components
+ToneScope/
+├── app/                      # Streamlit interactive dashboard
+│   ├── streamlit_app.py      # Main application entry point
+│   └── components/           # Modular Plotly visualization components
 ├── src/                      # Core source code
-│   ├── chat_parsers/         # Multi-format chat parsers
-│   ├── models/               # ML model architectures
-│   ├── data/                 # Dataset loading & preprocessing
-│   ├── inference/            # Inference pipeline
-│   └── analysis/             # Post-inference analysis modules
-├── scripts/                  # Training & evaluation scripts
-├── tests/                    # Test suite
-├── data/sample_chats/        # Sample chat exports for demo
-├── requirements.txt          # Dependencies
-├── training_guide.md         # Step-by-step training commands
-└── README.md                 # This file
+│   ├── chat_parsers/         # Multi-format chat parsers (WhatsApp, Slack, Discord, Telegram)
+│   ├── models/               # Multi-task RoBERTa & sarcasm corrector architectures
+│   ├── data/                 # Dataset loader & context preprocessor
+│   ├── inference/            # End-to-end inference pipeline & fallback loader
+│   └── analysis/             # Arc construction, cause attribution & escalation risk
+├── scripts/                  # Training, evaluation & dataset download scripts
+├── tests/                    # Comprehensive unit test suite (26 tests)
+├── data/
+│   ├── sample_chats/         # Pre-packaged chat exports for instant demo testing
+│   ├── raw/                  # (Directory tracked with .gitkeep; raw data excluded)
+│   └── processed/            # (Directory tracked with .gitkeep; processed data excluded)
+├── models/                   # (Directory tracked with .gitkeep; model binaries excluded)
+├── requirements.txt          # Python project dependencies
+├── training_guide.md         # Detailed manual training instructions & CLI commands
+└── README.md                 # Project documentation
 ```
+
+---
+
+## 📦 What's Included vs. Excluded in this Repository
+
+To keep the repository lightweight, portable, and compliant with GitHub's 100 MB file size limit, large binary files and raw datasets are excluded via `.gitignore`. The directory skeleton is preserved via `.gitkeep`.
+
+| Component | Status in Git | Why | How to Obtain / Run |
+|:---|:---:|:---|:---|
+| **Application & Pipeline Code** | ✅ **Included** | Complete Streamlit dashboard, modular visualization components, parsers, and inference logic | Ready to run out of the box |
+| **Sample Chat Exports** | ✅ **Included** | Real multi-turn sample conversations (`data/sample_chats/`) for Discord, Slack, and WhatsApp | Use immediately in the dashboard or test suite |
+| **Unit Test Suite** | ✅ **Included** | 26 unit tests covering parsers, arcs, cause attribution, escalation, and sarcasm correction | Run `pytest tests/ -v` |
+| **Model Checkpoints** (`models/*`) | ❌ **Excluded** | Fine-tuned `.safetensors`, `optimizer.pt`, and checkpoint dumps are ~500 MB – 1 GB each (exceeding GitHub's limit) | **Auto-Fallback (Default):** The dashboard auto-downloads pre-trained HuggingFace base models (`roberta-base`) on first run — no manual download required.<br><br>**Custom Training:** Run `python scripts/train_emotion.py` and `python scripts/train_sarcasm.py` to regenerate the fine-tuned checkpoints into `models/`. |
+| **Raw & Processed Datasets** (`data/raw/`, `data/processed/`) | ❌ **Excluded** | Full corpus data (GoEmotions 58K, MELD 13K, DailyDialog 13K, iSarcasmEval) would bloat repo size | Run `python scripts/download_datasets.py` to download and cache all datasets via HuggingFace Hub. |
+| **Caches & Virtual Envs** (`venv/`, `.cache/`, `.pytest_cache/`) | ❌ **Excluded** | Machine-specific binaries, environments, and transient caches | Created locally via `python -m venv venv` |
+
 
 ---
 
