@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environment & Conda
+venv/
+.venv/
+env/
+ENV/
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# AI Assistant Tooling & Symlinks
+.agents/
+.claude/
+
+# HuggingFace & Cache
+.cache/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Model weights & Checkpoints (too large for GitHub >100MB limit)
+models/*
+!models/.gitkeep
+
+# Data (preserve structure, ignore heavy raw/processed datasets)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+!data/sample_chats/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Logs & Monitoring
+*.log
+wandb/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Distribution & Packaging
+dist/
+build/
+*.egg-info/
+
+# Environment Variables & Secrets
+.env
+.env.*
+*.env

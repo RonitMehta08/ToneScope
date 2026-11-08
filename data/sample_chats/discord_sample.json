@@ -1,0 +1,17 @@
+{
+  "channel": {"name": "study-group"},
+  "messages": [
+    {"author": {"name": "Anya", "isBot": false}, "content": "Has anyone started the ML assignment yet?", "timestamp": "2026-09-15T20:00:00+05:30", "type": "Default"},
+    {"author": {"name": "Karthik", "isBot": false}, "content": "Started? I finished it last week 😎", "timestamp": "2026-09-15T20:01:00+05:30", "type": "Default"},
+    {"author": {"name": "Anya", "isBot": false}, "content": "Oh sure you did. And I suppose you also solved P vs NP while you were at it?", "timestamp": "2026-09-15T20:02:00+05:30", "type": "Default"},
+    {"author": {"name": "Meera", "isBot": false}, "content": "lol Anya. But seriously I'm stuck on question 3. The gradient descent part.", "timestamp": "2026-09-15T20:03:00+05:30", "type": "Default"},
+    {"author": {"name": "Karthik", "isBot": false}, "content": "I was being serious! But yeah Q3 is tricky. The learning rate needs to be really small.", "timestamp": "2026-09-15T20:04:00+05:30", "type": "Default"},
+    {"author": {"name": "Anya", "isBot": false}, "content": "Wait, you actually finished it? I'm sorry, I thought you were joking!", "timestamp": "2026-09-15T20:05:00+05:30", "type": "Default"},
+    {"author": {"name": "Karthik", "isBot": false}, "content": "No worries haha. Want me to share my approach for Q3? Not the answers obviously.", "timestamp": "2026-09-15T20:06:00+05:30", "type": "Default"},
+    {"author": {"name": "Meera", "isBot": false}, "content": "YES PLEASE! I've been staring at it for 3 hours and my brain is melting", "timestamp": "2026-09-15T20:07:00+05:30", "type": "Default"},
+    {"author": {"name": "Karthik", "isBot": false}, "content": "OK so the key insight is to use momentum-based SGD instead of vanilla GD. The loss surface has a lot of saddle points.", "timestamp": "2026-09-15T20:08:00+05:30", "type": "Default"},
+    {"author": {"name": "Anya", "isBot": false}, "content": "Oh! That makes so much sense. I was using plain batch GD and wondering why it wasn't converging.", "timestamp": "2026-09-15T20:09:00+05:30", "type": "Default"},
+    {"author": {"name": "Meera", "isBot": false}, "content": "Karthik you're a lifesaver! Let me try that right now.", "timestamp": "2026-09-15T20:10:00+05:30", "type": "Default"},
+    {"author": {"name": "Karthik", "isBot": false}, "content": "Happy to help! We're all in this together 🙌", "timestamp": "2026-09-15T20:11:00+05:30", "type": "Default"}
+  ]
+}

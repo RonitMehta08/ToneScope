@@ -1,0 +1,16 @@
+[
+  {"user": "U001", "user_profile": {"real_name": "Dev Lead"}, "text": "Hey team, standup time! How's everyone doing?", "ts": "1695888000.000000"},
+  {"user": "U002", "user_profile": {"real_name": "Frontend Dev"}, "text": "Morning! The new dashboard components are deployed to staging.", "ts": "1695888060.000000"},
+  {"user": "U003", "user_profile": {"real_name": "Backend Dev"}, "text": "Cool. The API is still returning 500s on the /analytics endpoint though.", "ts": "1695888120.000000"},
+  {"user": "U001", "user_profile": {"real_name": "Dev Lead"}, "text": "That's been happening for two days now. What's the blocker?", "ts": "1695888180.000000"},
+  {"user": "U003", "user_profile": {"real_name": "Backend Dev"}, "text": "The database migration script corrupted the indexes. I need DBA access to fix it.", "ts": "1695888240.000000"},
+  {"user": "U001", "user_profile": {"real_name": "Dev Lead"}, "text": "Why wasn't this escalated earlier? The client is asking for a progress update TODAY.", "ts": "1695888300.000000"},
+  {"user": "U003", "user_profile": {"real_name": "Backend Dev"}, "text": "I mentioned it in Monday's retro. Nobody followed up.", "ts": "1695888360.000000"},
+  {"user": "U002", "user_profile": {"real_name": "Frontend Dev"}, "text": "To be fair, the retro notes weren't shared. I didn't know about this either.", "ts": "1695888420.000000"},
+  {"user": "U001", "user_profile": {"real_name": "Dev Lead"}, "text": "OK, my bad on the follow-up. Let me get you DBA access right now. @Backend Dev, can you fix it within 2 hours?", "ts": "1695888480.000000"},
+  {"user": "U003", "user_profile": {"real_name": "Backend Dev"}, "text": "If I get access in the next 30 minutes, yes. Definitely.", "ts": "1695888540.000000"},
+  {"user": "U001", "user_profile": {"real_name": "Dev Lead"}, "text": "Done. Check your email. And let's make sure retro action items go into Jira from now on.", "ts": "1695888600.000000"},
+  {"user": "U002", "user_profile": {"real_name": "Frontend Dev"}, "text": "Agreed. I'll set up a template for that. No more things falling through the cracks.", "ts": "1695888660.000000"},
+  {"user": "U003", "user_profile": {"real_name": "Backend Dev"}, "text": "Got the access. Starting the fix now. Will update in the channel when it's done.", "ts": "1695888720.000000"},
+  {"user": "U001", "user_profile": {"real_name": "Dev Lead"}, "text": "Perfect. Thanks team. Let's keep the momentum going!", "ts": "1695888780.000000"}
+]

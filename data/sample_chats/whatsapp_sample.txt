@@ -1,0 +1,19 @@
+25/09/26, 10:00 - Priya: Good morning team! Ready for the sprint review?
+25/09/26, 10:01 - Rahul: Morning. Yeah, about that... we might have a problem.
+25/09/26, 10:02 - Priya: What kind of problem? Everything was green yesterday!
+25/09/26, 10:03 - Rahul: Well, the payment gateway integration broke overnight. Some API changes on their end.
+25/09/26, 10:04 - Priya: Are you serious?! The demo is in 3 hours!
+25/09/26, 10:05 - Rahul: Dead serious. I've been debugging since 7 AM.
+25/09/26, 10:06 - Sneha: Oh wow, what GREAT timing. Just perfect for our demo day.
+25/09/26, 10:07 - Priya: Sneha, not helping. Rahul, what's the ETA on a fix?
+25/09/26, 10:08 - Rahul: Hard to say. The issue is on their sandbox environment. I've raised a ticket.
+25/09/26, 10:09 - Priya: A ticket?! We don't have time for tickets! Can we mock the API for the demo?
+25/09/26, 10:10 - Sneha: Actually, that's not a bad idea. I can set up a mock server in about an hour.
+25/09/26, 10:11 - Rahul: Yeah, that could work. I'll give you the response schemas.
+25/09/26, 10:12 - Priya: Thank you both. I was panicking there for a second.
+25/09/26, 10:13 - Sneha: No worries, Priya. We've got this. Team effort!
+25/09/26, 10:14 - Rahul: Agreed. Also, their support just replied. Fix should be live by EOD.
+25/09/26, 10:15 - Priya: Oh that's a relief! Great work everyone. Let's nail this demo.
+25/09/26, 10:16 - Sneha: Mock server is almost ready. Testing now.
+25/09/26, 10:17 - Rahul: Beautiful. Crisis averted.
+25/09/26, 10:18 - Priya: This is why I love this team. 💪
